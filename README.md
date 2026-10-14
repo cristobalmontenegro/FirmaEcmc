@@ -1,10 +1,21 @@
 # ✍️ FirmaEcmc
 
-**ES:** Paquete **portable** del *Firmador de documentos electrónicos de Ecuador* (FirmaEC), listo para firmar documentos **sin instalar Java** en la máquina. Incluye un JRE embebido y lanzadores para Windows y Linux/macOS.
+**ES:** Paquete **portable** del *Firmador de documentos electrónicos de Ecuador* (FirmaEC), listo para firmar documentos **sin instalar Java** en la máquina. Su gran diferencia es que **permite firmar con una fecha y hora personalizadas, incluso anteriores a hoy**. Incluye un JRE embebido y lanzadores para Windows y Linux/macOS.
 
-**EN:** A **portable** package of Ecuador's *electronic document signer* (FirmaEC), ready to sign documents **without installing Java**. It bundles a JRE and launchers for Windows and Linux/macOS.
+**EN:** A **portable** package of Ecuador's *electronic document signer* (FirmaEC), ready to sign documents **without installing Java**. Its big difference: **you can sign with a custom date and time, including dates earlier than today**. It bundles a JRE and launchers for Windows and Linux/macOS.
 
-> ⚠️ **Fork / redistribución.** Este proyecto es un fork y reempaquetado del **Firmador** original del Estado ecuatoriano (clase principal `ec.gob.firmadigital.firmador.Main`), desarrollado originalmente por **Marcelo Apolo**. Las modificaciones (empaquetado portable + lanzadores multi‑plataforma) son de **Cristóbal Montenegro**. El software original y sus dependencias están bajo **Apache License 2.0**.
+> ⚠️ **Fork / redistribución.** Este proyecto es un fork y reempaquetado del **Firmador** original del Estado ecuatoriano (clase principal `ec.gob.firmadigital.firmador.Main`), desarrollado originalmente por **Marcelo Apolo**. Las modificaciones —**fecha/hora de firma personalizable** y empaquetado portable con lanzadores multiplataforma— son de **Cristóbal Montenegro**. El software original y sus dependencias están bajo **Apache License 2.0**.
+
+---
+
+## ⭐ Diferencia clave / Key difference
+
+**ES:** El Firmador original firma **siempre con la fecha y hora actuales**. **FirmaEcmc permite elegir la fecha y la hora de la firma**, incluidas **fechas anteriores a hoy**. Es ideal para regularizar documentos o cuando la firma debía constar con otra fecha.
+
+**EN:** The original signer **always stamps the current date and time**. **FirmaEcmc lets you choose the signing date and time**, including **dates earlier than today**. Ideal for regularizing documents or when the signature should carry a different date.
+
+> ℹ️ **ES:** La fecha/hora elegida es la que queda registrada como fecha de firma del documento. Úsalo de forma responsable.
+> **EN:** The chosen date/time is what gets recorded as the document's signing date. Use it responsibly.
 
 ---
 
@@ -12,6 +23,7 @@
 
 ### ✨ ¿Qué aporta este fork?
 
+- **⭐ Fecha y hora de firma personalizables**: firma con una fecha y hora distintas a las actuales, incluidas **anteriores a hoy**.
 - **Portable / sin instalación**: incluye un **JRE 8** embebido; no hay que instalar Java aparte.
 - **Lanzadores multiplataforma**:
   - Windows → `inicio.bat`
@@ -55,6 +67,7 @@ El lanzador usa el Java embebido si está disponible; si no, intenta usar el Jav
 
 ### ✨ What does this fork add?
 
+- **⭐ Custom signing date & time**: sign with a date and time other than the current one, including **dates earlier than today**.
 - **Portable / no install**: bundles an **embedded JRE 8**; no separate Java installation required (Windows).
 - **Cross-platform launchers**:
   - Windows → `inicio.bat`
